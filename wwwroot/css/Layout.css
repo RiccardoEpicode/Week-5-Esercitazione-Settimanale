@@ -1,0 +1,46 @@
+﻿/* ------- Layout Wrapper ------- */
+.layout-wrapper {
+    display: flex;
+    min-height: calc(100vh - 60px); /* footer compensation */
+}
+
+/* ------- Sidebar ------- */
+.sidebar {
+    width: 6rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    background: var(--bs-body-bg);
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    z-index: 1031;
+}
+
+.content {
+    margin-left: 6rem;
+}
+
+
+    /* Dropdown menu must stay above everything */
+    .sidebar .dropdown-menu {
+        z-index: 2000 !important;
+    }
+
+/* ------- Main Content ------- */
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    margin-left: 4.5rem; /* offset for sidebar */
+}
+
+/* ------- Icon size ------- */
+.sidebar .nav-link i {
+    font-size: 1.6rem;
+}
+
+.sidebar .nav-link {
+    width: 100%;
+}
