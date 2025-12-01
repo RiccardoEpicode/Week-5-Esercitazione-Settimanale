@@ -1,7 +1,7 @@
-﻿using MusicLibrary.Models.Entity;
+﻿using Library.Models.Entity;
 using Microsoft.EntityFrameworkCore;
 
-namespace MusicLibrary.Context
+namespace Library.Context
 {
     public class AppDbContext : DbContext
     {

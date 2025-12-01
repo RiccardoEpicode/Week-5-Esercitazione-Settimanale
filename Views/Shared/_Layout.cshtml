@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MusicLibrary</title>
+    <title>@ViewData["Title"] - Library</title>
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Layout.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 
@@ -21,7 +22,7 @@
 
             <div class="nav-item mb-4 w-100 text-center">
                 <a asp-controller="Home" asp-action="Index" class="nav-link py-3 rounded-0">
-                    <i class="bi bi-music-note-beamed fs-1"></i>
+                    <i class="bi bi-book-half fs-1"></i>
                 </a>
             </div>
 
@@ -36,38 +37,36 @@
                 </li>
 
                 <li class="nav-item my-2">
-                    <a asp-controller="Artists" asp-action="Index"
-                       class="nav-link py-3 rounded-0 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Artists" ? "active" : "")">
-                        <i class="bi bi-person-fill"></i>
-                        <span class="d-block small">Artists</span>
+                    <a asp-controller="Authors" asp-action="Index"
+                       class="nav-link py-3 rounded-0 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Authors" ? "active" : "")">
+                        <i class="bi bi-person-lines-fill"></i>
+                        <span class="d-block small">Authors</span>
                     </a>
                 </li>
 
                 <li class="nav-item my-2">
-                    <a asp-controller="Albums" asp-action="Index"
-                       class="nav-link py-3 rounded-0 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Albums" ? "active" : "")">
-                        <i class="bi bi-disc-fill"></i>
-                        <span class="d-block small">Albums</span>
+                    <a asp-controller="Collections" asp-action="Index"
+                       class="nav-link py-3 rounded-0 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Collections" ? "active" : "")">
+                        <i class="bi bi-collection"></i>
+                        <span class="d-block small">Collections</span>
                     </a>
                 </li>
 
                 <li class="nav-item my-2">
-                    <a asp-controller="Songs" asp-action="Index"
-                       class="nav-link py-3 rounded-0 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Songs" ? "active" : "")">
-                        <i class="bi bi-music-note-list"></i>
-                        <span class="d-block small">Songs</span>
+                    <a asp-controller="Books" asp-action="Index"
+                       class="nav-link py-3 rounded-0 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Books" ? "active" : "")">
+                        <i class="bi bi-book"></i>
+                        <span class="d-block small">Books</span>
                     </a>
                 </li>
 
                 <li class="nav-item my-2">
                     <a asp-controller="Genres" asp-action="Index"
                        class="nav-link py-3 rounded-0 @(ViewContext.RouteData.Values["controller"]?.ToString() == "Genres" ? "active" : "")">
-                        <i class="bi bi-collection"></i>
+                        <i class="bi bi-tags"></i>
                         <span class="d-block small">Genres</span>
                     </a>
                 </li>
-
-              
 
             </ul>
 

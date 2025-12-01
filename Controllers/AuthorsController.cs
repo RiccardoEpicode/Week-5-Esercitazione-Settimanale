@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MusicLibrary.Controllers
+namespace Library.Controllers
 {
-    public class SongsController : Controller
+    public class AuthorsController : Controller
     {
         public IActionResult Index()
         {

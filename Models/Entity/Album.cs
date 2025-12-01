@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MusicLibrary.Models.Entity
+namespace Library.Models.Entity
 {
     public class Album
     {

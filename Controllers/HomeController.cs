@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using MusicLibrary.Models;
+using Library.Models;
 
-namespace MusicLibrary.Controllers
+namespace Library.Controllers
 {
     public class HomeController : Controller
     {

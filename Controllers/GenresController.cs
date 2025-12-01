@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MusicLibrary.Controllers
+namespace Library.Controllers
 {
     public class GenresController : Controller
     {
